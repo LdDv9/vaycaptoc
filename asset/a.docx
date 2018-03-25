@@ -1,0 +1,209 @@
+[31-Jan-2018 14:00:57 UTC] PHP Deprecated:  Non-static method App\Http\Controllers\IndexController::ajaxGetUser() should not be called statically in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286
+[31-Jan-2018 14:00:57 UTC] PHP Fatal error:  Uncaught ReflectionException: Class request does not exist in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:752
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(752): ReflectionClass->__construct('request')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('request')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('request', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('request', Array)
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(691): app('request')
+#5 D:\W in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 752
+[31-Jan-2018 14:02:06 UTC] PHP Deprecated:  Non-static method App\Http\Controllers\IndexController::ajaxGetUser() should not be called statically in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286
+[31-Jan-2018 14:02:06 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Http\Controllers\IndexController::ajaxGetUser() must be an instance of Illuminate\Http\Request, string given, called in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286 and defined in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php:31
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(286): App\Http\Controllers\IndexController::ajaxGetUser('')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-admin\admin-ajax.php(97): do_action('wp_ajax_get_use...')
+#4 {main}
+  thrown in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 31
+[31-Jan-2018 14:02:50 UTC] PHP Deprecated:  Non-static method App\Http\Controllers\IndexController::ajaxGetUser() should not be called statically in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286
+[31-Jan-2018 14:22:13 UTC] PHP Fatal error:  Uncaught Error: Cannot call constructor in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php:24
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(18): App\Http\Controllers\IndexController->__construct()
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\CallAjax.php(2): App\Http\Controllers\IndexController::init()
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(48): require_once('D:\\Work\\Web\\XAM...')
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(27): WPLaravelBoostrap\LaravelBootstrap->__construct()
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(54): WPLaravelBoostrap\LaravelBootstrap::getInstance()
+#5 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-settings.php(305): include_once('D:\\Work\\Web\\XAM...')
+#6 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-config.php(92): requir in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 24
+[31-Jan-2018 14:24:10 UTC] PHP Fatal error:  Uncaught Error: Cannot call constructor in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php:24
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(18): App\Http\Controllers\IndexController->__construct()
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\CallAjax.php(2): App\Http\Controllers\IndexController::init()
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(48): require_once('D:\\Work\\Web\\XAM...')
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(27): WPLaravelBoostrap\LaravelBootstrap->__construct()
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(54): WPLaravelBoostrap\LaravelBootstrap::getInstance()
+#5 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-settings.php(305): include_once('D:\\Work\\Web\\XAM...')
+#6 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-config.php(92): requir in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 24
+[31-Jan-2018 14:26:10 UTC] PHP Fatal error:  Uncaught Error: Cannot call constructor in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php:24
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(18): App\Http\Controllers\IndexController->__construct()
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\CallAjax.php(2): App\Http\Controllers\IndexController::init()
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(48): require_once('D:\\Work\\Web\\XAM...')
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(27): WPLaravelBoostrap\LaravelBootstrap->__construct()
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(54): WPLaravelBoostrap\LaravelBootstrap::getInstance()
+#5 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-settings.php(305): include_once('D:\\Work\\Web\\XAM...')
+#6 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-config.php(92): requir in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 24
+[31-Jan-2018 14:28:10 UTC] PHP Fatal error:  Uncaught Error: Cannot call constructor in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php:24
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(18): App\Http\Controllers\IndexController->__construct()
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\CallAjax.php(2): App\Http\Controllers\IndexController::init()
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(48): require_once('D:\\Work\\Web\\XAM...')
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(27): WPLaravelBoostrap\LaravelBootstrap->__construct()
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(54): WPLaravelBoostrap\LaravelBootstrap::getInstance()
+#5 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-settings.php(305): include_once('D:\\Work\\Web\\XAM...')
+#6 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-config.php(92): requir in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 24
+[31-Jan-2018 14:29:14 UTC] PHP Fatal error:  Uncaught Error: Cannot call constructor in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php:24
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(18): App\Http\Controllers\IndexController->__construct()
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\CallAjax.php(2): App\Http\Controllers\IndexController::init()
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(48): require_once('D:\\Work\\Web\\XAM...')
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(27): WPLaravelBoostrap\LaravelBootstrap->__construct()
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\plugins\larapress\lara-press.php(54): WPLaravelBoostrap\LaravelBootstrap::getInstance()
+#5 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-settings.php(305): include_once('D:\\Work\\Web\\XAM...')
+#6 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-config.php(92): requir in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 24
+[31-Jan-2018 14:29:39 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 14:50:40 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:218
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(38): Illuminate\Support\Facades\Facade::__callStatic('check', Array)
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(286): App\Http\Controllers\IndexController::ajaxGetUser('')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-admin\admin-ajax.php(97): do_action('wp_ajax_get_use...')
+#5 {main}
+  thrown in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php on line 218
+[31-Jan-2018 15:09:06 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286
+[31-Jan-2018 15:09:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286
+[31-Jan-2018 15:10:39 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php on line 286
+[31-Jan-2018 15:50:14 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 15:50:54 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 15:56:26 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 15:58:09 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 15:58:12 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 15:58:56 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[31-Jan-2018 15:58:59 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Routing\ResponseFactory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[02-Feb-2018 13:18:13 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\IndexController' not found in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\themes\corporatebits\template\index.php:6
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\template-loader.php(74): include()
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-blog-header.php(19): require_once('D:\\Work\\Web\\XAM...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\index.php(17): require('D:\\Work\\Web\\XAM...')
+#3 {main}
+  thrown in D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-content\themes\corporatebits\template\index.php on line 6
+[02-Feb-2018 13:40:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Http\Controllers\Controller::validate() must be an instance of Illuminate\Http\Request, array given, called in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 44 and defined in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php:41
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(44): App\Http\Controllers\Controller->validate(Array, Array)
+#1 [internal function]: App\Http\Controllers\IndexController->ajaxSignIn(Array)
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\Controller.php(36): call_user_func(Array, Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 D in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php on line 41
+[02-Feb-2018 13:56:34 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Http\Controllers\Controller::validate() must be an instance of Illuminate\Http\Request, array given, called in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 45 and defined in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php:41
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(45): App\Http\Controllers\Controller->validate(Array, Array)
+#1 [internal function]: App\Http\Controllers\IndexController->ajaxSignIn(Array)
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\Controller.php(36): call_user_func(Array, Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 D in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php on line 41
+[02-Feb-2018 13:56:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Http\Controllers\Controller::validate() must be an instance of Illuminate\Http\Request, array given, called in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 45 and defined in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php:41
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(45): App\Http\Controllers\Controller->validate(Array, Array)
+#1 [internal function]: App\Http\Controllers\IndexController->ajaxSignIn(Array)
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\Controller.php(36): call_user_func(Array, Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 D in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php on line 41
+[02-Feb-2018 14:04:39 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Validation\Factory] is not instantiable. in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:918
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(758): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(631): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(586): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(110): Illuminate\Container\Container->make('Illuminate\\Cont...', Arra in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 918
+[02-Feb-2018 14:11:06 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Http\Controllers\Controller::validate() must be an instance of Illuminate\Http\Request, array given, called in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php on line 45 and defined in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php:41
+Stack trace:
+#0 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\IndexController.php(45): App\Http\Controllers\Controller->validate(Array, Array)
+#1 [internal function]: App\Http\Controllers\IndexController->ajaxSignIn(Array)
+#2 D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\app\Http\Controllers\Controller.php(36): call_user_func(Array, Array)
+#3 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#4 D:\Work\Web\XAMPP\htdocs\web\freeproject\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 D in D:\Work\Web\XAMPP\htdocs\web\freeproject\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Validation\ValidatesRequests.php on line 41
+[22-Mar-2018 02:02:21 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:02:34 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:02:36 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:02:38 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:02:54 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:02:57 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:05 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:10 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:11 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:20 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:37 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:45 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:03:54 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:04:01 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:04:05 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:05:50 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:08:10 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[22-Mar-2018 02:10:10 UTC] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /srv/www/vaycaptoc.com/wp-content/themes/thefox/functions.php on line 73
+[23-Mar-2018 17:18:06 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:18:06 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:19:18 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:19:18 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:19:32 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:19:32 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:19:52 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:19:52 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:21:15 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:21:15 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:21:20 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:21:20 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:21:30 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:21:30 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:33:25 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:33:25 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:33:31 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:33:31 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:33:52 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:33:52 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:34:51 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[23-Mar-2018 17:34:51 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
