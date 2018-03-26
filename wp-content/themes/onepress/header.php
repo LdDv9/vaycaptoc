@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     
-    <script src="/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+    <script  src="/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
     
     <!--<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>-->
     

@@ -55,7 +55,7 @@ if ( ! $hide_footer ) {
         </div>
         <div id="call">
             <a id="call-a" href="tel:+841628500169" title="liên hệ ngay">
-                <img id="img-call" src="/asset/images/call.png" alt="liên hệ ngay" style="height: 100px;position: fixed; right: 5px;bottom: 50px; z-index: 999">
+                <img id="img-call" src="/asset/images/call.svg" alt="liên hệ ngay" style="height: 100px;position: fixed; right: 5px;bottom: 20px; z-index: 999">
             </a>
         </div>
         <!-- .site-info -->
@@ -73,11 +73,11 @@ do_action( 'onepress_site_end' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src=" <?php echo get_template_directory_uri() ?>/assets/js/plugins.js" > </script>
+<script   src=" <?php echo get_template_directory_uri() ?>/assets/js/plugins.js" > </script>
 <!--<script src=" --><?php //echo get_template_directory_uri() ?><!--/assets/js/imagesloaded.js" > </script>-->
-<script src="/asset/jq/jquery.validate.min.js"></script>
-<script src="/asset/bootstrap/js/bootstrap.min.js"></script>
-<script src=" <?php echo get_template_directory_uri() ?>/assets/js/theme.js" > </script>
+<script  src="/asset/jq/jquery.validate.min.js"></script>
+<script  src="/asset/bootstrap/js/bootstrap.min.js"></script>
+<script  src=" <?php echo get_template_directory_uri() ?>/assets/js/theme.js" > </script>
 <script>
     jQuery(document).ready(function ($) {
 
