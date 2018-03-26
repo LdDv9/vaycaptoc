@@ -99,6 +99,9 @@ do_action( 'onepress_site_end' );
                     required : true,
                     number : true,
                     minlength : 8,
+                },
+                type : {
+                    required : true,
                 }
 
             },
@@ -121,6 +124,9 @@ do_action( 'onepress_site_end' );
                     required : "Vui lòng nhập số tiền muốn vay",
                     number   : "Số tiền vay bắt buộc phải là số",
                     minlength : "Số tiền vay quá ít"
+                },
+                type : {
+                    required : "Vui lòng chọn loại vay"
                 }
             },
             errorPlacement: function (error, element) {
@@ -178,13 +184,6 @@ do_action( 'onepress_site_end' );
                 // return false;
             }
         });
-//                        $('#register').click(function () {
-//                            swal({
-//                                html:'Đ!t Mẹ Lỗi',
-//                                type: 'error'
-//                            });
-//                            return false;
-//                        });
     });
 </script>
 

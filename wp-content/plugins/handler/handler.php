@@ -16,7 +16,7 @@ function registerGuest(){
     $cmnd = !empty($_REQUEST['cmnd']) ? $_REQUEST['cmnd']:'';
     $email = !empty($_REQUEST['email']) ? $_REQUEST['email']:'';
     $company = !empty($_REQUEST['company']) ? $_REQUEST['company']:'';
-    $address = !empty($_REQUEST['address']) ? $_REQUEST['address']:'';
+    $type = !empty($_REQUEST['type']) ? $_REQUEST['type']:'';
     $more = !empty($_REQUEST['more']) ? $_REQUEST['more']:'';
     $money = (int)$money;
     
@@ -38,6 +38,9 @@ function registerGuest(){
     if(!empty($email) && !is_email($email)){
         wp_send_json_error('Bạn đã nhập email, nhưng email sai định dạng!');
     }
+    if(empty($type)){
+        wp_send_json_error('Bạn chưa chọn thể loại vay!');
+    }
     $dataInsert = [
         'name'  => $name,
         'phone' => $phone,
@@ -45,7 +48,7 @@ function registerGuest(){
         'cmnd'  => $cmnd,
         'email' => $email,
         'company'   => $company,
-        'address'   => $address,
+        'type'   => $type,
         'more'      => $more,
         'created_at'    => current_time('mysql')
     ];

@@ -56,10 +56,14 @@ if ( !$disable && !empty( $data ) ) {
                             <span class="btn-primary-custom input-group-addon" id="basic-addon1">Đơn vị công tác</span>
                             <input name="company" class="form-control" placeholder="Vd: Cty TNHH..." aria-describedby="basic-addon2">
                         </div> <br>
-                        <div class="input-group">
-                            <span class="btn-primary-custom input-group-addon" id="basic-addon1">Địa chỉ</span>
-                            <input name="address" class="form-control" placeholder="Vd: 3x Tôn Đức Thắng xxx" aria-describedby="basic-addon2">
-                        </div> <br>
+                        <div class="form-group">
+                            <select name="type" id="type" class="form-control">
+                                <option value="">-- Chọn loại vay --</option>
+                                <option value="luong">-- Vay theo lương --</option>
+                                <option value="BHNT">-- Vay theo bảo hiểm nhân thọ --</option>
+                                <option value="the">-- Vay theo thẻ tín dụng(Thẻ ghi nợ) --</option>
+                            </select>
+                        </div><br>
                         <div class="input-group">
                             <span class="btn-primary-custom input-group-addon" id="basic-addon1">Thông tin thêm</span>
                             <textarea name="more" class="form-control" placeholder="Vd: Hiện đang dư nợ tại ngần hàng xxx, đang mua trả góp,..." aria-describedby="basic-addon2"></textarea>
