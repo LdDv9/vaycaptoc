@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	
-	<h2><?php esc_html_e( 'Nothing Found', 'onepress' ); ?></h2>
+	<h2><?php esc_html_e( 'Không tìm thấy', 'onepress' ); ?></h2>
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -19,12 +19,12 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'onepress' ); ?></p>
+			<p><?php esc_html_e( 'Xin lỗi, từ khóa bạn tìm hiện không có kết quả, vui lòng tìm với từ khóa khác.', 'onepress' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'onepress' ); ?></p>
+			<p><?php esc_html_e( 'Chưa có dữ liệu.', 'onepress' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
