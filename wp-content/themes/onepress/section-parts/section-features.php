@@ -59,9 +59,9 @@ if ( !$disable && !empty( $data ) ) {
                         <div class="form-group">
                             <select name="type" id="type" class="form-control">
                                 <option value="">-- Chọn loại vay --</option>
-                                <option value="luong">-- Vay theo lương --</option>
-                                <option value="BHNT">-- Vay theo bảo hiểm nhân thọ --</option>
-                                <option value="the">-- Vay theo thẻ tín dụng(Thẻ ghi nợ) --</option>
+                                <option value="Vay theo lương">-- Vay theo lương --</option>
+                                <option value="Vay theo bảo hiểm">-- Vay theo bảo hiểm nhân thọ --</option>
+                                <option value="Vay theo thẻ tín dụng(thẻ ghi nợ)">-- Vay theo thẻ tín dụng(Thẻ ghi nợ) --</option>
                             </select>
                         </div><br>
                         <div class="input-group">

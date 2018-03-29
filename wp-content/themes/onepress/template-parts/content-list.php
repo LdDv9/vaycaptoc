@@ -8,7 +8,7 @@
  */
 ?>
 
-<article class="col-md-6" id="post-<?php the_ID(); ?>" <?php post_class( array('list-article', 'clearfix') ); ?>>
+<article  id="post-<?php the_ID(); ?>" <?php post_class( array('list-article', 'clearfix') ); ?>>
 
 	<div class="list-article-thumb">
 		<a href="<?php echo esc_url( get_permalink() ); ?>">
@@ -42,4 +42,6 @@
 		</div><!-- .entry-content -->
 	</div>
 
-</article><!-- #post-## -->
+</article>
+
+<!-- #post-## -->

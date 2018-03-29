@@ -326,12 +326,12 @@ if ( ! function_exists( 'onepress_posted_on' ) ) {
         );
 
         $posted_on = sprintf(
-            esc_html_x('Posted on %s', 'post date', 'onepress'),
+            esc_html_x('Đăng lúc %s', 'post date', 'onepress'),
             '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
         );
 
         $byline = sprintf(
-            esc_html_x('by %s', 'post author', 'onepress'),
+            esc_html_x('bởi %s', 'post author', 'onepress'),
             '<span class="author vcard"><a  rel="author" class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
         );
 
@@ -357,7 +357,7 @@ if ( ! function_exists( 'onepress_entry_footer' ) ) {
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list('', esc_html__(', ', 'onepress'));
             if ($tags_list) {
-                printf('<span class="tags-links">' . esc_html__('Tagged %1$s', 'onepress') . '</span>', $tags_list); // WPCS: XSS OK.
+                printf('<span class="tags-links">' . esc_html__('Thẻ %1$s', 'onepress') . '</span>', $tags_list); // WPCS: XSS OK.
             }
         }
 
@@ -1561,13 +1561,22 @@ if ( ! function_exists('onepress_subscribe_form') ) {
         ?>
         <div class="footer-subscribe">
             <?php if ($onepress_newsletter_title != '') echo '<h5 class="follow-heading">' . $onepress_newsletter_title . '</h5>'; ?>
-            <form novalidate="" target="_blank" class="" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post"
-                  action="<?php if ($onepress_newsletter_mailchimp != '') {
-                      echo $onepress_newsletter_mailchimp;
-                  }; ?>">
-                <input type="text" placeholder="<?php esc_attr_e('Enter your e-mail address', 'onepress'); ?>" id="mce-EMAIL" class="subs_input" name="EMAIL" value="">
-                <input type="submit" class="subs-button" value="<?php esc_attr_e('Subscribe', 'onepress'); ?>" name="subscribe">
-            </form>
+<!--            <form novalidate="" target="_blank" class="" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post"-->
+<!--                  action="--><?php //if ($onepress_newsletter_mailchimp != '') {
+//                      echo $onepress_newsletter_mailchimp;
+//                  }; ?><!--">-->
+<!--                <input type="text" placeholder="--><?php //esc_attr_e('Enter your e-mail address', 'onepress'); ?><!--" id="mce-EMAIL" class="subs_input" name="EMAIL" value="">-->
+<!--                <input type="submit" class="subs-button" value="--><?php //esc_attr_e('Subscribe', 'onepress'); ?><!--" name="subscribe">-->
+<!--            </form>-->
+            <a target="_blank" title="liên hệ facebook" href="https://www.facebook.com/trugtamtaichinhquocgia/" class="lien-he">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a  title="liên hệ điện thoại" href="tel:+841628500169" class="lien-he">
+                <i class="fa fa-phone-square"></i>
+            </a>
+            <a  title="liên hệ mail" class="lien-he" href="mailto:songdehanhdong@gmail.com?Subject=Yêu%20cầu%20Trợ%20giúp%20vay%20cấp%20tốc%20(vaycaptoc.com)" target="_top">
+                <i class="fa fa-envelope-square"></i>
+            </a>
         </div>
         <?php
     }

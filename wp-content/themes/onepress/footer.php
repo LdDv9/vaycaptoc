@@ -55,9 +55,20 @@ if ( ! $hide_footer ) {
         </div>
         <div id="call">
             <a id="call-a" href="tel:+841628500169" title="liên hệ ngay">
-                <img id="img-call" src="/asset/images/call.svg" alt="liên hệ ngay" style="height: 100px;position: fixed; right: 5px;bottom: 20px; z-index: 999">
+                <img id="img-call" src="/asset/images/call.svg" alt="liên hệ ngay" style="height: 70px;position: fixed; right: 5px;bottom: 20px; z-index: 999">
             </a>
         </div>
+        <div id="share" style="position: fixed; left: 0; bottom: 300px; z-index: 99; font-size: 18px; padding-left: 5px; background: #ffffff; border-bottom-right-radius: 8px; box-shadow: 0 0 15px #000000; border-top-right-radius:8px; padding-right: 10px;border-left: none;">
+            <ul class="list-unstyled list-social-icon">
+                <li>
+                    <a target="_blank" title="Chia sẻ qua Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo WP_SITEURL?>" rel="nofollow"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" title="Chia sẻ qua Google+" href="https://plus.google.com/share?url=<?php echo WP_SITEURL?>" rel="nofollow"><i class="fa fa-google"></i></a>
+                </li>
+            </ul>
+        </div>
+
         <!-- .site-info -->
 
     </footer><!-- #colophon -->

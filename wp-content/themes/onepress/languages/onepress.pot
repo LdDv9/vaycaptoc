@@ -16,7 +16,7 @@ msgstr ""
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Xin lỗi, trang bạn truy cập hiện không tìm thấy"
 
 #: 404.php:26
 msgid ""
@@ -26,25 +26,25 @@ msgstr ""
 
 #: 404.php:34
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Thể loại được dùng nhiều nhất"
 
 #. %1$s: smiley
 #: 404.php:51
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Hãy thử tìm trong kho lưu trữ hàng tháng"
 
 #: comments.php:31
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "Tiêu đề bình luận"
 msgstr[1] ""
 
 #: comments.php:40 comments.php:60
 msgid "Comment navigation"
-msgstr ""
+msgstr "Điều hướng bình luận"
 
 #: comments.php:43 comments.php:63
 msgid "Older Comments"
@@ -267,7 +267,7 @@ msgstr ""
 #: search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Kết quả tìm kiếm cho: %s, bạn xem danh sách kết quả bên dưới nhé"
 
 #. Name of the template
 msgid "Frontpage"
@@ -502,23 +502,23 @@ msgstr ""
 
 #: inc/dashboard.php:558
 msgid "Are you sure want to copy ?"
-msgstr ""
+msgstr "Bạn có chắc chắn muốn sao chép"
 
 #: inc/template-tags.php:73
 msgid "Menu"
-msgstr ""
+msgstr "Danh mục"
 
 #: inc/template-tags.php:107
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Ngày đăng"
 
 #: inc/template-tags.php:112
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "Tác giả "
 
 #. used between list items, there is a space after the comma
 #. used between list items, there is a space after the comma
@@ -558,7 +558,7 @@ msgstr ""
 
 #: inc/template-tags.php:234
 msgid "Post author"
-msgstr ""
+msgstr "Tác giả"
 
 #. 1: date, 2: time
 #: inc/template-tags.php:240
@@ -568,11 +568,11 @@ msgstr ""
 
 #: inc/template-tags.php:242
 msgid "Reply"
-msgstr ""
+msgstr "Trả lời"
 
 #: inc/template-tags.php:243
 msgid "Edit"
-msgstr ""
+msgstr "Chính sửa"
 
 #: inc/template-tags.php:248
 msgid "Your comment is awaiting moderation."

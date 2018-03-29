@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<div class="page-header">
 			<div class="container">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'onepress' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><?php printf( esc_html__( 'Kết quả tìm kiếm cho: "%s". Bạn xem danh sách kết quả bên dưới nhé ', 'onepress' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</div>
 		</div>
 
