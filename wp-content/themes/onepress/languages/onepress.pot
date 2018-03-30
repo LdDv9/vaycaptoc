@@ -40,7 +40,7 @@ msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Tiêu đề bình luận"
-msgstr[1] ""
+msgstr[1] "%1$s Bình luận trong &ldquo;%2$s&rdquo;"
 
 #: comments.php:40 comments.php:60
 msgid "Comment navigation"
