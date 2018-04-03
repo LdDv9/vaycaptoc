@@ -43,7 +43,7 @@ get_header(); ?>
                             <header class="entry-header">
                                 <p class="lead"><a href="<?=$list->guid?>" rel="bookmark"><?=$list->post_title ?></a></p>		</header><!-- .entry-header -->
                             <div class="entry-excerpt">
-                                <p><?php print(substr( $list->post_content,0 ,200 ))?>...</p>
+                                <p><?php echo sprintf(substr( $list->post_content,0 ,200 ))?>...</p>
                             </div><!-- .entry-content -->
                         </div>
 
