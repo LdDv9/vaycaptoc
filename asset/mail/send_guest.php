@@ -8,7 +8,7 @@ $money = !empty($_GET['money']) ? $_GET['money'] : '';
             <tbody>
             <tr>
                 <td align="center" bgcolor="#ffffff">
-                        <a href="https://vaycaptoc.com"><img width="360px" src="https://vaycaptoc.com/asset/images/logo.svg"
+                        <a href="https://vaycaptoc.com"><img width="360px" src="https://vaycaptoc.com/asset/images/logo-3.png"
                                                          alt="Logo Vay cấp tốc"></a>
                 </td>
             </tr>
