@@ -16,6 +16,11 @@ if (is_user_logged_in()) {
         ?>
         <div class="container-fluid" style="padding: 50px 20px 50px 20px">
             <div class="row">
+               <div class="text-center">
+                   <p class="lead">
+                       <?php echo "Hiển thị <b>$dataOnSite</b> trên tổng số <b>$total</b> dữ liệu, bắt đầu từ dữ liệu thứ <b>$from</b>"?>
+                   </p>
+               </div>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
@@ -53,9 +58,6 @@ if (is_user_logged_in()) {
                     </table>
                 </div>
                 <div class="text-center">
-                    <p class="lead">
-                       <?php echo "Hiển thị <b>$dataOnSite</b> trên tổng số <b>$total</b> dữ liệu, bắt đầu từ dữ liệu thứ <b>$from</b>"?>
-                    </p>
                     <?php if($total > $limit) :?>
                     <ul class="pagination">
                         <?php
