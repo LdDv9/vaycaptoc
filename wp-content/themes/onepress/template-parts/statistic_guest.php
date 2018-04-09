@@ -10,6 +10,7 @@ global $wpdb;
 $data = $wpdb->get_results("SELECT * FROM `v_guests` ORDER BY `created_at` DESC LIMIT $from, $limit ");
 $dataOnSite = count($data);
 $total = $wpdb->get_var( "SELECT COUNT(id) AS total FROM `v_guests`");
+$startData = $total - 50;
 get_header();
 if (is_user_logged_in()) {
     if (current_user_can('administrator')) {
@@ -18,7 +19,7 @@ if (is_user_logged_in()) {
             <div class="row">
                <div class="text-center">
                    <p class="lead">
-                       <?php echo "Hiển thị <b>$dataOnSite</b> trên tổng số <b>$total</b> dữ liệu, bắt đầu từ dữ liệu thứ <b>$from</b>"?>
+                       <?php echo "Hiển thị <b>$dataOnSite</b> trên tổng số <b>$total</b> dữ liệu, bắt đầu từ dữ liệu thứ <b>$startData</b>"?>
                    </p>
                </div>
                 <div class="table-responsive">
