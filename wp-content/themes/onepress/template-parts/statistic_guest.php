@@ -10,7 +10,12 @@ global $wpdb;
 $data = $wpdb->get_results("SELECT * FROM `v_guests` ORDER BY `created_at` DESC LIMIT $from, $limit ");
 $dataOnSite = count($data);
 $total = $wpdb->get_var( "SELECT COUNT(id) AS total FROM `v_guests`");
-$startData = $total - 50;
+
+if ($dataOnSite < 50) {
+    $startData = 0;
+} else {
+    $startData = $total - 50;
+}
 get_header();
 if (is_user_logged_in()) {
     if (current_user_can('administrator')) {
@@ -26,7 +31,7 @@ if (is_user_logged_in()) {
                     <table class="table table-hover">
                         <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>STT</th>
                             <th>Tên</th>
                             <th>SĐT</th>
                             <th>Số tiền vay</th>
