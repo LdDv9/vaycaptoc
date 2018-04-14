@@ -83,7 +83,48 @@ do_action( 'onepress_site_end' );
 ?>
 </div><!-- #page -->
 
+
 <?php wp_footer(); ?>
+
+<?php  if(is_front_page()): ?>
+    <!-- modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Thông báo tuyển dụng </h2>
+                    <div class="col-md-12">
+                        <div class="col-md-6 col-xs-12 content-tuyen-dung">
+                            <ul>
+                                <li>Tuyển dụng nhân viên tổng đài chăm sóc khách hàng, không yêu cầu bằng cấp, kinh nghiệp</li>
+                                <li>Tuyển dụng miễn phí, thu nhập <b class="text-danger">9-10</b> triệu/tháng</li>
+                                <li>Làm việc tại văn phòng, Quận 1, Tp HCM</li>
+                            </ul>
+
+                            <a target="_blank" class="btn btn-danger" href="<?php echo WP_SITEURL?>/tuyen-dung">Ứng tuyển ngay</a>
+                        </div>
+                        <div  class="col-md-6 col-xs-12 pull-right " >
+                            <img class =" img-tuyen-dung" src="asset/images/customer-service.svg" alt="Tuyển dụng, vay cấp tốc">
+
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="modal-body">-->
+
+<!--                </div>-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end modal -->
+<?php endif;?>
+
 <script   src=" <?php echo get_template_directory_uri() ?>/assets/js/plugins.js" > </script>
 <!--<script src=" --><?php //echo get_template_directory_uri() ?><!--/assets/js/imagesloaded.js" > </script>-->
 <script  src="/asset/jq/jquery.validate.min.js"></script>
@@ -91,7 +132,6 @@ do_action( 'onepress_site_end' );
 <script  src=" <?php echo get_template_directory_uri() ?>/assets/js/theme.js" > </script>
 <script>
     jQuery(document).ready(function ($) {
-
         $("#form-register").validate({
             rules : {
                 name : "required",
@@ -195,6 +235,7 @@ do_action( 'onepress_site_end' );
                 // return false;
             }
         });
+        $('#myModal').modal('show');
     });
 </script>
 
