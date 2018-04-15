@@ -111,5 +111,4 @@ function tuyenDung(){
     } else {
         wp_send_json_error('Thật xin lỗi, đã có lỗi trong quá trình xử lý!');
     }
-
 }

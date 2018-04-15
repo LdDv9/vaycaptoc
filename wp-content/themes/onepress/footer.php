@@ -99,7 +99,7 @@ do_action( 'onepress_site_end' );
                     <div class="col-md-12">
                         <div class="col-md-6 col-xs-12 content-tuyen-dung">
                             <ul>
-                                <li>Tuyển dụng nhân viên tổng đài chăm sóc khách hàng, không yêu cầu bằng cấp, kinh nghiệp</li>
+                                <li>Tuyển dụng nhân viên tổng đài chăm sóc khách hàng, không yêu cầu bằng cấp, kinh nghiện</li>
                                 <li>Tuyển dụng miễn phí, thu nhập <b class="text-danger">9-10</b> triệu/tháng</li>
                                 <li>Làm việc tại văn phòng, Quận 1, Tp HCM</li>
                             </ul>

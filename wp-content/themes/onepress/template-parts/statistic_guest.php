@@ -8,6 +8,7 @@ $limit = 50;
 $from = (int)$current*$limit-$limit;
 global $wpdb;
 $data = $wpdb->get_results("SELECT * FROM `v_guests` ORDER BY `created_at` DESC LIMIT $from, $limit ");
+$dataTuyenDung = $wpdb->get_results("SELECT * FROM `v_employees`");
 $dataOnSite = count($data);
 $total = $wpdb->get_var( "SELECT COUNT(id) AS total FROM `v_guests`");
 
@@ -22,7 +23,7 @@ if (is_user_logged_in()) {
         ?>
         <div class="container-fluid" style="padding: 50px 20px 50px 20px">
             <div class="row">
-               <div class="text-center">
+                <div class="text-center">
                    <p class="lead">
                        <?php echo "Hiển thị <b>$dataOnSite</b> trên tổng số <b>$total</b> dữ liệu, bắt đầu từ dữ liệu thứ <b>$startData</b>"?>
                    </p>
@@ -85,6 +86,43 @@ if (is_user_logged_in()) {
                         ?>
                     </ul>
                   <?php endif ?>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h2 class="text-center">Danh sách đăng ký ứng tuyển</h2>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>SĐT</th>
+                            <th>Email</th>
+                            <th>Địa chỉ</th>
+                            <th>Mức lương</th>
+                            <th>Ngày sinh</th>
+                            <th>Ngày tạo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach ($dataTuyenDung as $list) :?>
+                            <tr>
+                                <td><?=$list->id?></td>
+                                <td><?=$list->name?></td>
+                                <td>
+                                    <a href="tel:<?=$list->phone?>"><?=$list->phone?></a>
+                                </td>
+                                <td><?=$list->email?></td>
+                                <td><?=$list->address?></td>
+                                <td><?=number_format($list->money).' VNĐ'?></td>
+                                <td><?=$list->dob?></td>
+
+                                <td><?=date('H:i:s   d-m-Y',strtotime($list->created_at))?></td>
+                            </tr>
+                        <?php endforeach;?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

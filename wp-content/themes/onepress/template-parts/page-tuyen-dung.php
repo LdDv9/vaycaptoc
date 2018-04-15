@@ -12,6 +12,7 @@ global $post;
     <div class="section-content" style="padding: 100px 0 100px">
         <div class="row">
             <div class="col-md-12">
+                <h2 class="text-center">Đăng ký ứng tuyển </h2>
                 <form action="" method="post" id="form-ung-tuyen">
                     <div class="col-md-6 pull-left">
                         <div class="input-group">
