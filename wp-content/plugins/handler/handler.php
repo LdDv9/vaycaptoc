@@ -6,6 +6,12 @@ Version: 0.2
 Author: Lê Dũng(Cáo).
 Author URI: http://fb.com/ld.dv9
 */
+
+//require_once 'API/API.php';
+require_once 'vendor/autoload.php';
+
+\VCT\API::init();
+
 add_action('wp_ajax_handler','registerGuest');
 add_action('wp_ajax_nopriv_handler','registerGuest');
 function registerGuest(){

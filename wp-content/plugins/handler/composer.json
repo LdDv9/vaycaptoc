@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "description": "vay cap toc",
+  "authors": [
+    {
+      "name": "dun",
+      "email": "ledungb11@gmail.com"
+    }],
+  "autoload": {
+    "psr-4": {
+      "VCT\\": "API/"
+    }
+  },
+  "require": {
+    "tareq1988/wp-eloquent": "dev-master"
+  }
+}

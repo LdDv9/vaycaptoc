@@ -11,7 +11,7 @@ Theme My Login will always look in your theme's directory first, before using th
 
 		<div class="user-pass1-wrap">
 			<p>
-				<label for="pass1"><?php _e( 'New password', 'theme-my-login' ); ?></label>
+				<label for="pass1"><?php _e( 'Mật khẩu mới', 'theme-my-login' ); ?></label>
 			</p>
 
 			<div class="wp-pwd">
@@ -21,7 +21,7 @@ Theme My Login will always look in your theme's directory first, before using th
 						<span class="dashicons dashicons-hidden"></span>
 					</span>
 				</div>
-				<div id="pass-strength-result" class="hide-if-no-js" aria-live="polite"><?php _e( 'Strength indicator', 'theme-my-login' ); ?></div>
+				<div id="pass-strength-result" class="hide-if-no-js" aria-live="polite"><?php _e( 'Độ mạnh mật khẩu', 'theme-my-login' ); ?></div>
 			</div>
 			<div class="pw-weak">
 				<label>
@@ -41,7 +41,7 @@ Theme My Login will always look in your theme's directory first, before using th
 		<?php do_action( 'resetpassword_form' ); ?>
 
 		<p class="tml-submit-wrap">
-			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Reset Password', 'theme-my-login' ); ?>" />
+			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Thay đổi mật khẩu', 'theme-my-login' ); ?>" />
 			<input type="hidden" id="user_login" value="<?php echo esc_attr( $GLOBALS['rp_login'] ); ?>" autocomplete="off" />
 			<input type="hidden" name="rp_key" value="<?php echo esc_attr( $GLOBALS['rp_key'] ); ?>" />
 			<input type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
