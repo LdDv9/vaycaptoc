@@ -52,7 +52,7 @@ class API extends WP_REST_Controller {
         $DB = new DB();
         $page = !empty($_GET['page']) ? $_GET['page'] : 1;
         $dataGuest = $DB->table('guests')->orderByDesc('created_at')->paginate(50,['*'],'page',$page);
-        return json_encode($dataGuest);
+        return $dataGuest;
     }
 
     /**
