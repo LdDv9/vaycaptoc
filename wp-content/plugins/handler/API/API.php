@@ -29,29 +29,46 @@ class API extends WP_REST_Controller {
 
         $this->namespace = 'wp/api/';
         add_action( 'rest_api_init', [ $this, "register_routes" ] );
+
     }
 
     public function register_routes() {
         register_rest_route( $this->namespace, '/guest-api', array(
             array(
+                'methods'  => WP_REST_Server::ALLMETHODS,
+                'callback' => array( $this, 'getGuest' )
+            ),
+            'schema' => array( $this, 'get_public_item_schema' ),
+        ) );
+
+        register_rest_route( $this->namespace, '/employees-api', array(
+            array(
                 'methods'  => WP_REST_Server::READABLE,
-                'callback' => array( $this, 'get_guest' ),
-                'args'     => array(
-                    'access_token' => array(
-                        'description' => __( 'Access Token of facebook' ),
-                        'type'        => 'string',
-                    ),
-                ),
+                'callback' => array( $this, 'getEmployees' )
             ),
             'schema' => array( $this, 'get_public_item_schema' ),
         ) );
     }
 
-    public function get_guest(){
+    /**
+     * get data guest register
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     */
+    public function getGuest(){
+        $DB = new DB();
+        $page = !empty($_REQUEST['page']) ? $_REQUEST['page'] : 1;
+        $dataGuest = $DB->table('guests')->orderByDesc('created_at')->paginate(50,['*'],'page',$page);
+        return $dataGuest;
+    }
 
+    /**
+     * get data employees register recruitment
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     */
+    public function getEmployees(){
         $DB = new DB();
         $page = !empty($_GET['page']) ? $_GET['page'] : 1;
-        $dataGuest = $DB->table('guests')->orderByDesc('created_at')->paginate(50,['*'],'page',$page);
+        $dataGuest = $DB->table('employees')->orderByDesc('created_at')->paginate(50,['*'],'page',$page);
         return $dataGuest;
     }
 
