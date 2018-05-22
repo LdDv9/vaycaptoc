@@ -2,6 +2,18 @@
 /**
  * Template Name: Statistic Guests
  */
+use WeDevs\ORM\Eloquent\Database as DB;
+$DB = new DB();
+
+//$data = $DB->table('guests')->paginate(50);
+//echo '<pre>';
+//var_dump($data->render());
+//echo '</pre>';
+//exit();
+
+
+
+
 
 $current= !empty(get_query_var('page')) ? sanitize_text_field(get_query_var('page')) : 1;
 $limit = 50;

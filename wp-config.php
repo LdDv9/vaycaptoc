@@ -27,9 +27,9 @@ define('COMPRESS_CSS', true );
 //define('CONCATENATE_SCRIPTS', true);
 define('WP_MEMORY_LIMIT', '128M');
 
-define('WP_CACHE', true);
+define('WP_CACHE', false);
 define( 'WPCACHEHOME', '/srv/www/vaycaptoc.com/wp-content/plugins/wp-super-cache/' );
-define('DB_NAME', 'vaycaptoc');
+define('DB_NAME', 'vct');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -92,7 +92,8 @@ $table_prefix  = 'v_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', true );
 define( 'WP_DEBUG_LOG', true );
 
 /* That's all, stop editing! Happy blogging. */

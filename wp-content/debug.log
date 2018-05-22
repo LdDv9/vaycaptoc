@@ -207,3 +207,9 @@ Stack trace:
 [23-Mar-2018 17:33:52 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
 [23-Mar-2018 17:34:51 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
 [23-Mar-2018 17:34:51 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0! Hiện không có giải pháp thay thế. in /srv/www/vaycaptoc.com/wp-includes/functions.php on line 3842
+[17-May-2018 09:42:29 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\web\vaycaptoc\wp-includes\wp-db.php on line 1531
+[17-May-2018 09:42:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in D:\xampp\htdocs\web\vaycaptoc\wp-includes\wp-db.php on line 1531
+[17-May-2018 09:42:52 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in D:\xampp\htdocs\web\vaycaptoc\wp-includes\wp-db.php on line 1531
+[17-May-2018 09:42:53 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in D:\xampp\htdocs\web\vaycaptoc\wp-includes\wp-db.php on line 1531
+[17-May-2018 09:42:53 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in D:\xampp\htdocs\web\vaycaptoc\wp-includes\wp-db.php on line 1531
