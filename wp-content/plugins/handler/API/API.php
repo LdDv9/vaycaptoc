@@ -48,6 +48,14 @@ class API extends WP_REST_Controller {
             ),
             'schema' => array( $this, 'get_public_item_schema' ),
         ) );
+
+        register_rest_route( $this->namespace, '/edit-guest', array(
+            array(
+                'methods'  => WP_REST_Server::EDITABLE,
+                'callback' => array( $this, 'editGuest' )
+            ),
+            'schema' => array( $this, 'get_public_item_schema' ),
+        ) );
     }
 
     /**
@@ -72,6 +80,38 @@ class API extends WP_REST_Controller {
         return $dataGuest;
     }
 
+    /**
+     * @return array
+     */
+    public function editGuest(){
+        $guestId = !empty($_REQUEST['guestId']) ? $_REQUEST['guestId'] : '';
+        if (!empty($guestId)) {
+            $DB = new  DB();
+            $guest = $DB->table('guests')->find($guestId);
+            if (!empty($guest->id)) {
+                $guestNote = !empty($_REQUEST['guestNote']) ? $_REQUEST['guestNote'] : '' ;
+                $guestStatus = !empty($_REQUEST['guestStatus']) ? $_REQUEST['guestStatus'] : '' ;
+                $DB->table('guests')->where('id',$guest->id)->update([
+                        'note' => $guestNote,
+                        'status' => $guestStatus
+                    ]);
+                return [
+                    'status' => 'success',
+                    'message' => 'Update guest success'
+                ];
+            } else {
+                return [
+                    'status' => 'error',
+                    'message' => 'Not found guest'
+                ];
+            }
+        } else {
+            return [
+                'status' => 'error',
+                'message' => 'Empty id guest'
+            ];
+        }
+    }
     /**
      * Create token jwt
      * @param $user
